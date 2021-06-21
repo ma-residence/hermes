@@ -1,0 +1,17 @@
+.fourth-page {
+  height: calc(100vh - 150px);
+
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  height: 130px;
+  border-top: solid white 1px;
+
+  padding: 15px 0;
+}
+
+footer img {
+  height: 100%;
+}

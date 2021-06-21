@@ -1,0 +1,56 @@
+.inline {
+  display: inline-block;
+}
+
+.input {
+  height: 50px;
+  border-radius: 12px;
+  border: solid 2px var(--bg-light-blue);
+  outline: unset;
+  padding: 0 20px;
+}
+
+.form-contact {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-contact * {
+  margin: 8px 0;
+}
+
+.submit-button {
+  height: 50px;
+  border: 0;
+  border-radius: 12px;
+
+  font-weight: 700;
+  font-size: 1.2em;
+  color: white;
+}
+
+.textarea {
+  height: 150px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.first-page {
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+  height: calc(100vh - 80px);
+}
+
+.contact {
+  text-align: left;
+  color: var(--bg-dark-blue);
+  background: #ffffff;
+  border-radius: 28px;
+}
