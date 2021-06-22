@@ -43,6 +43,7 @@
 .first-page {
   min-height: calc(100vh - 80px);
   color: white;
+  justify-content: center;
 }
 
 .contact {
@@ -51,4 +52,5 @@
   background: #ffffff;
   border-radius: 28px;
   padding: 20px;
+  height: fit-content;
 }

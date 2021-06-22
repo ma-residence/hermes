@@ -70,13 +70,18 @@
 }
 
 p {
-  font-weight: 600;
+  font-weight: normal;
 }
 h1,
 h2 {
   font-weight: 700;
   font-size: 1.7em;
   margin-block-start: 0;
+  font-family: "ITC Avant-Garde Gothic";
+}
+
+h3, h4 {
+  font-family: "ITC Avant-Garde Gothic";
 }
 
 label {

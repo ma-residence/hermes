@@ -13,7 +13,7 @@ function App() {
       <SecondPage />
       <div className="spacer gradient"/>
       <ThirdPage />
-      {/* <FourthPage /> */}
+      <FourthPage />
     </div>
   );
 }

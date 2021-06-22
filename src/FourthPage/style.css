@@ -1,17 +1,41 @@
 .fourth-page {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 30px - 80px);
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 footer {
-  height: 130px;
   border-top: solid white 1px;
-
+  display: flex;
+  justify-content: center;
   padding: 15px 0;
 }
 
+@media screen and (max-width: 780px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer * {
+  margin: 12px;
+}
+
+.infos {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.infos p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 4px;
+}
+
 footer img {
-  height: 100%;
+  height: 80px;
 }

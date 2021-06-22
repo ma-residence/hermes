@@ -22,12 +22,12 @@ const ThirdPage = () => {
             <p>de besoins servis par le réseau</p>
           </div>
           <div>
-            <h2 className="stats">80%</h2>
-            <p>de besoins servis par le réseau</p>
+            <h2 className="stats">48h</h2>
+            <p>maximum pour une réponse</p>
           </div>
           <div>
-            <h2 className="stats">80%</h2>
-            <p>de besoins servis par le réseau</p>
+            <h2 className="stats">2km</h2>
+            <p>maximum entre vous et votre aidant</p>
           </div>
         </div>
       </div>

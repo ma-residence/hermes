@@ -32,8 +32,8 @@ const SecondPage = () => (
                 <h2>2</h2>
               </div>
               <div>
-                <h4>{SECOND_BLOCK.first_paragraph.title}</h4>
-                <p>{SECOND_BLOCK.first_paragraph.text}</p>
+                <h4>{SECOND_BLOCK.second_paragraph.title}</h4>
+                <p>{SECOND_BLOCK.second_paragraph.text}</p>
               </div>
             </div>
             <div className="paragraph">
@@ -41,8 +41,8 @@ const SecondPage = () => (
                 <h2>3</h2>
               </div>
               <div>
-                <h4>{SECOND_BLOCK.first_paragraph.title}</h4>
-                <p>{SECOND_BLOCK.first_paragraph.text}</p>
+                <h4>{SECOND_BLOCK.third_paragraph.title}</h4>
+                <p>{SECOND_BLOCK.third_paragraph.text}</p>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { FIRST_BLOCK } from "./strings";
 const FirstPage = () => (
   <div className="background gradient">
     <section className="container first-page ">
-      <div className="content">
+      <div style={{ alignItems: "center" }} className="content">
         <div className="flex-one">
           <h1>{FIRST_BLOCK.title}</h1>
           <p>{FIRST_BLOCK.paragraph}</p>
