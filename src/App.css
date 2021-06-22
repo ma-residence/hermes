@@ -1,18 +1,22 @@
 .App {
   text-align: left;
   height: 100vh;
+  width: 100%;
+}
+
+.spacer {
+  min-height: 88px;
 }
 
 .flex-one {
   flex: 1;
-  min-width: 400px;
+  min-width: 200px;
   margin: 30px;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .container {
@@ -31,6 +35,13 @@
 @media screen and (max-width: 780px) {
   .App {
     text-align: center;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  .flex-one {
+    margin: 0;
   }
 }
 @media screen and (max-width: 1088px) {
@@ -64,7 +75,8 @@ p {
 h1,
 h2 {
   font-weight: 700;
-  font-size: 1.83em;
+  font-size: 1.7em;
+  margin-block-start: 0;
 }
 
 label {

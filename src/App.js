@@ -11,7 +11,8 @@ function App() {
       <Header />
       <FirstPage />
       <SecondPage />
-      {/* <ThirdPage /> */}
+      <div className="spacer gradient"/>
+      <ThirdPage />
       {/* <FourthPage /> */}
     </div>
   );
