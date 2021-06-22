@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/hermes/static/css/main.ee7c982b.chunk.css",
-    "main.js": "/hermes/static/js/main.8b9bc0f0.chunk.js",
-    "main.js.map": "/hermes/static/js/main.8b9bc0f0.chunk.js.map",
+    "main.css": "/hermes/static/css/main.18a9cb74.chunk.css",
+    "main.js": "/hermes/static/js/main.2cba205f.chunk.js",
+    "main.js.map": "/hermes/static/js/main.2cba205f.chunk.js.map",
     "runtime-main.js": "/hermes/static/js/runtime-main.8db6e344.js",
     "runtime-main.js.map": "/hermes/static/js/runtime-main.8db6e344.js.map",
     "static/js/2.8311e58e.chunk.js": "/hermes/static/js/2.8311e58e.chunk.js",
     "static/js/2.8311e58e.chunk.js.map": "/hermes/static/js/2.8311e58e.chunk.js.map",
     "index.html": "/hermes/index.html",
-    "static/css/main.ee7c982b.chunk.css.map": "/hermes/static/css/main.ee7c982b.chunk.css.map",
-    "static/js/2.8311e58e.chunk.js.LICENSE.txt": "/hermes/static/js/2.8311e58e.chunk.js.LICENSE.txt"
+    "static/css/main.18a9cb74.chunk.css.map": "/hermes/static/css/main.18a9cb74.chunk.css.map",
+    "static/js/2.8311e58e.chunk.js.LICENSE.txt": "/hermes/static/js/2.8311e58e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/hermes/static/media/ITCAvantGardeStdBold.f501defc.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.8db6e344.js",
     "static/js/2.8311e58e.chunk.js",
-    "static/css/main.ee7c982b.chunk.css",
-    "static/js/main.8b9bc0f0.chunk.js"
+    "static/css/main.18a9cb74.chunk.css",
+    "static/js/main.2cba205f.chunk.js"
   ]
 }
