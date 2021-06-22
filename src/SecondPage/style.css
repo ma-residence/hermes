@@ -4,16 +4,11 @@
   background-color: white;
   color: white;
   align-items: center;
-  height: calc(100vh - 100px);
   color: black;
-  padding: 50px 100px;
 }
 
 .title {
   color: var(--bg-dark-blue);
-}
-
-.justified {
 }
 
 .page-container {
@@ -45,6 +40,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .paragraph h2 {
   color: rgba(31, 128, 134, 0.6);
   font-size: 6em;

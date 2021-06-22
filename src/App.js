@@ -11,8 +11,8 @@ function App() {
       <Header />
       <FirstPage />
       <SecondPage />
-      <ThirdPage />
-      <FourthPage />
+      {/* <ThirdPage /> */}
+      {/* <FourthPage /> */}
     </div>
   );
 }

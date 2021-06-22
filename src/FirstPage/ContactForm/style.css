@@ -41,11 +41,8 @@
 }
 
 .first-page {
-  display: flex;
-  flex-direction: row;
-
+  min-height: calc(100vh - 80px);
   color: white;
-  height: calc(100vh - 80px);
 }
 
 .contact {
@@ -53,4 +50,5 @@
   color: var(--bg-dark-blue);
   background: #ffffff;
   border-radius: 28px;
+  padding: 30px;
 }

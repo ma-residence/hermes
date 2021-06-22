@@ -36,9 +36,9 @@ const ThirdPage = () => {
           <h3 className="parag-title">{SECOND_PARAGRAPH_TITLE}</h3>
           <p>{SECOND_PARAGRAPH}</p>
         </div>
-        <div className="image-back-container">
-            <img src="/logo-2.png" alt="icon" />
-        </div>
+
+        <div className="img-block"></div>
+        <img className="image-back" src="/logo-2.png" alt="icon" />
       </div>
     </section>
   );

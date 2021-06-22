@@ -1,8 +1,9 @@
 import { BUTTON_TEXT, CHECKBOX_LABEL } from "./strings";
 import { SECOND_BLOCK } from "../strings";
+import "./style.css";
 
 const ContactForm = () => (
-  <div className="container contact">
+  <div className="contact">
     <h1>{SECOND_BLOCK.title}</h1>
     <form className="form-contact">
       <input

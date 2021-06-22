@@ -1,21 +1,21 @@
 .third-page {
-  height: calc(100vh - 50px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 25px;
+  justify-content: space-between;
 }
 
 .first-block {
-  height: calc(35vh - 25px);
+  height: 35vh;
 }
 
 .second-block {
-  height: calc(65vh - 25px);
+  height: 65vh;
   display: flex;
   flex-direction: row;
-  flex: wrap;
-  margin-left: 125px;
+  justify-content: left;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .title-container {
@@ -46,16 +46,25 @@
 }
 
 .second-paragraph {
-  flex: 45;
+  max-width: 538px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 24px;
+  flex: 2;
 }
 
-.image-back-container {
-  flex: 55;
+.img-block {
+  flex: 1;
 }
 
-.image-back-container img {
+.image-back {
   height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .parag-title {
