@@ -18,12 +18,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header logo={datas.logo} tel={datas.tel} city={datas.city} />
+      <Header logo={datas.logo} tel={datas.descriptionContact && datas.descriptionContact.tel} city={datas.city} />
       <FirstPage city={datas.city} />
       <SecondPage />
       <div className="spacer gradient" />
       <ThirdPage />
-      <FourthPage {...datas} />
+      <FourthPage {...datas} {...datas.descriptionContact} />
     </div>
   );
 }
