@@ -5,13 +5,13 @@
 
 @font-face {
   font-family: "ITC Avant-Garde Gothic";
-  src: url("./fonts/avant-garde/ITCAvantGardeStdBk.otf");
+  src: url("./assets/fonts/avant-garde/ITCAvantGardeStdBk.otf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ITC Avant-Garde Gothic";
-  src: url("./fonts/avant-garde/ITCAvantGardeStdBold.otf");
+  src: url("./assets/fonts/avant-garde/ITCAvantGardeStdBold.otf");
   font-weight: bold;
 }
 
