@@ -11,17 +11,19 @@ function App() {
 
   const datas =
     data.terms_of_service.find(
-      (elem) => elem.city === city.substr(1).replaceAll("-", " ")
+      (elem) =>
+        elem.city.toLowerCase() ===
+        city.toLowerCase().substr(1).replaceAll("-", " ")
     ) || data.terms_of_service[0];
 
   return (
     <div className="App">
-      <Header logo={datas.logo} tel={datas.tel} />
+      <Header logo={datas.logo} tel={datas.tel} city={datas.city} />
       <FirstPage city={datas.city} />
       <SecondPage />
       <div className="spacer gradient" />
       <ThirdPage />
-      <FourthPage city={datas.city} />
+      <FourthPage {...datas} />
     </div>
   );
 }
