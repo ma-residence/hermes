@@ -45,12 +45,12 @@ const data = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Blason_ville_fr_Champagnole_%28Jura%29.svg/98px-Blason_ville_fr_Champagnole_%28Jura%29.svg.png",
     },
     {
-      city: "La Ravoire",
+      city: "La-Ravoire",
       descriptionContact: null,
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Blason_ville_fr_la_Ravoire.svg/98px-Blason_ville_fr_la_Ravoire.svg.png",
     },
     {
-      city: "Saint Gratien",
+      city: "Saint-Gratien",
       descriptionContact: {
         tel: "0134178484",
         email: "f.bonnet@mairie-saintgratien.fr",
@@ -73,7 +73,7 @@ const data = {
       logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/5/59/Nice_Armoiries.svg/98px-Nice_Armoiries.svg.png",
     },
     {
-      city: "Saint Médard en Jalles",
+      city: "Saint-Médard-en-Jalles",
       descriptionContact: null,
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Blason_ville_fr_Saint-M%C3%A9dard-en-Jalles_%28Gironde%29.svg/98px-Blason_ville_fr_Saint-M%C3%A9dard-en-Jalles_%28Gironde%29.svg.png",
     },
@@ -91,7 +91,7 @@ const data = {
       logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/d/dd/Nantes_logo.png/842px-Nantes_logo.png",
     },
     {
-      city: "Saint Herblain",
+      city: "Saint-Herblain",
       descriptionContact: null,
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Blason_ville_fr_Saint-Herblain_%28Loire-Atlantique%29.svg/98px-Blason_ville_fr_Saint-Herblain_%28Loire-Atlantique%29.svg.png",
     },
@@ -101,7 +101,7 @@ const data = {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Blason_ville_fr_Nerac_%28LotGaronne%29.svg/98px-Blason_ville_fr_Nerac_%28LotGaronne%29.svg.png",
     },
     {
-      city: "Le Passage",
+      city: "Le-Passage",
       descriptionContact: {
         tel: "0553771877",
         email: "ccas@ville-lepassage.fr",
@@ -146,7 +146,7 @@ const data = {
       logo: "http://edruson.com/wp-content/uploads/2019/04/logo-Nevers-RVB-300dpi.png",
     },
     {
-      city: "Saint quentin",
+      city: "Saint-Quentin",
       descriptionContact: {
         tel: "+33323636863",
         email: "ccas.solidarite@saint-quentin.fr",
