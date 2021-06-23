@@ -4,21 +4,23 @@ import "./style.css";
 import { useForm } from "react-hook-form";
 import db from "../../firebase.config";
 import omit from "lodash/omit";
+import { useState } from "react";
 
-const ContactForm = () => {
+const ContactForm = ({ city = "" }) => {
   const { register, handleSubmit, watch, errors } = useForm();
+  const [message, setMessage] = useState("");
 
   const onSubmit = (data) => {
-    console.log("test", { db });
     db.collection("demands")
       .add({
         ...omit(data, "valid"),
+        city,
       })
       .then(function () {
-        console.log("Value successfully written!");
+        setMessage("Votre besoin a été remonté avec succes.");
       })
-      .catch(function (error) {
-        console.error("Error writing Value: ", error);
+      .catch(function () {
+        setMessage("Erreur lors de l'envoi du formulaire");
       });
   };
 
@@ -66,6 +68,9 @@ const ContactForm = () => {
           />
           <label htmlFor="valid">{CHECKBOX_LABEL}</label>
         </div>
+        {message && (
+          <p style={{ color: "green", textAlign: "center" }}>{message}</p>
+        )}
         <button className="submit-button gradient" type="submit">
           {BUTTON_TEXT}
         </button>

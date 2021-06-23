@@ -1,18 +1,17 @@
 import ContactForm from "../FirstPage/ContactForm";
 import "./style.css";
 
-const FourthPage = () => {
+const FourthPage = ({ tel = "", email = "", city = "" }) => {
   return (
     <>
       <section className="fourth-page gradient">
-        <ContactForm />
+        <ContactForm city={city} />
       </section>
       <footer className="gradient">
         <img src={`${process.env.PUBLIC_URL}/logo-ccas.png`} alt="ccas" />
         <div className="infos">
-          <p>Mail : vierzon@ccas.fr</p>
-          <p>Téléphone : 06 00 00 00 00</p>
-          <p>Adresse : 1 rue de la Solidarité - 18100 Vierzon</p>
+          {email && <p>Mail : {email}</p>}
+          {tel && <p>Téléphone : {tel}</p>}
         </div>
       </footer>
     </>

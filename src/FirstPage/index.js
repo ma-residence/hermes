@@ -1,7 +1,7 @@
 import ContactForm from "./ContactForm";
 import { FIRST_BLOCK } from "./strings";
 
-const FirstPage = () => (
+const FirstPage = ({ city = "" }) => (
   <div className="background gradient">
     <section className="container first-page ">
       <div style={{ alignItems: "center" }} className="content">
@@ -10,7 +10,7 @@ const FirstPage = () => (
           <p>{FIRST_BLOCK.paragraph}</p>
         </div>
         <div className="flex-one">
-          <ContactForm />
+          <ContactForm city={city} />
         </div>
       </div>
     </section>

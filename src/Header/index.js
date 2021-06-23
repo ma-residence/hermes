@@ -1,14 +1,10 @@
 import "./style.css";
 
-const Header = () => (
+const Header = ({ logo = "", tel = "" }) => (
   <header className="header gradient">
-    <img
-      style={{ height: "80%" }}
-      src={`${process.env.PUBLIC_URL}/logo-ccas.png`}
-      alt="ccas"
-    />
+    <img style={{ height: "80%" }} src={logo} alt="ccas" />
 
-    <div>T: 00 00 00 00 00</div>
+    {tel && <div>T: {tel}</div>}
   </header>
 );
 
