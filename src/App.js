@@ -13,7 +13,7 @@ function App() {
     data.terms_of_service.find(
       (elem) =>
         elem.city.toLowerCase() ===
-        city.toLowerCase().substr(1).replaceAll("-", " ")
+        city.toLowerCase().substr(1)
     ) || data.terms_of_service[0];
 
   return (
