@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.fc2fd4a5.chunk.css",
-    "main.js": "/static/js/main.020b5a3f.chunk.js",
-    "main.js.map": "/static/js/main.020b5a3f.chunk.js.map",
+    "main.js": "/static/js/main.88f259c1.chunk.js",
+    "main.js.map": "/static/js/main.88f259c1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d315a075.js",
     "runtime-main.js.map": "/static/js/runtime-main.d315a075.js.map",
-    "static/js/2.838ae10c.chunk.js": "/static/js/2.838ae10c.chunk.js",
-    "static/js/2.838ae10c.chunk.js.map": "/static/js/2.838ae10c.chunk.js.map",
+    "static/js/2.0cf25d24.chunk.js": "/static/js/2.0cf25d24.chunk.js",
+    "static/js/2.0cf25d24.chunk.js.map": "/static/js/2.0cf25d24.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.fc2fd4a5.chunk.css.map": "/static/css/main.fc2fd4a5.chunk.css.map",
-    "static/js/2.838ae10c.chunk.js.LICENSE.txt": "/static/js/2.838ae10c.chunk.js.LICENSE.txt",
+    "static/js/2.0cf25d24.chunk.js.LICENSE.txt": "/static/js/2.0cf25d24.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/ITCAvantGardeStdBold.f501defc.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.d315a075.js",
-    "static/js/2.838ae10c.chunk.js",
+    "static/js/2.0cf25d24.chunk.js",
     "static/css/main.fc2fd4a5.chunk.css",
-    "static/js/main.020b5a3f.chunk.js"
+    "static/js/main.88f259c1.chunk.js"
   ]
 }
