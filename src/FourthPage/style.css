@@ -1,5 +1,5 @@
 .fourth-page {
-  height: calc(100vh - 30px - 80px);
+  min-height: calc(100vh - 30px - 80px);
 
   display: flex;
   justify-content: center;

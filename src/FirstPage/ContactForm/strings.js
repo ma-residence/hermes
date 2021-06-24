@@ -1,7 +1,9 @@
 export const CHECKBOX_LABEL = (
   <>
     En cochant cette case, vous acceptez notre{" "}
-    <a href="/">Politique de Traitement des Données.</a>
+    <a href="https://www.ensembl.fr/politique-de-confidentialite/">
+      Politique de Traitement des Données.
+    </a>
   </>
 );
 

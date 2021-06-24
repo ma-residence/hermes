@@ -5,9 +5,29 @@ import { useForm } from "react-hook-form";
 import db from "../../firebase.config";
 import omit from "lodash/omit";
 import { useState } from "react";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import * as yup from "yup";
+
+const REQUIRED = "CHAMP OBLIGATOIRE";
+
+const schema = yup.object().shape({
+  fullName: yup.string().required(REQUIRED),
+  phone: yup.string().required(REQUIRED),
+  email: yup.string().email().required(REQUIRED),
+  valid: yup.boolean().isTrue(REQUIRED),
+  description: yup.string().required(REQUIRED),
+});
 
 const ContactForm = ({ city = "" }) => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
   const [message, setMessage] = useState("");
 
   const onSubmit = (data) => {
@@ -33,9 +53,10 @@ const ContactForm = ({ city = "" }) => {
           name="fullName"
           defaultValue=""
           type="text"
-          {...register("name", { required: true })}
+          {...register("fullName", { required: true })}
           placeholder="Nom, prénom"
         />
+        {errors.fullName?.message && <span>{errors.fullName.message}</span>}
         <input
           className="input"
           name="phone"
@@ -44,6 +65,7 @@ const ContactForm = ({ city = "" }) => {
           {...register("phone", { required: true })}
           placeholder="Numéro de téléphone"
         />
+        {errors.phone?.message && <span>{errors.phone?.message}</span>}
         <input
           className="input"
           name="email"
@@ -52,14 +74,16 @@ const ContactForm = ({ city = "" }) => {
           {...register("email", { required: true })}
           placeholder="Adresse e-mail"
         />
+        {errors.email?.message && <span>{errors.email?.message}</span>}
         <textarea
           className="input textarea"
           name="description"
           defaultValue=""
           type="description"
-          {...register("decription", { required: true })}
+          {...register("description", { required: true })}
           placeholder="Votre besoin"
         />
+        {errors.description?.message && <span>{errors.description?.message}</span>}
         <div className="inline">
           <input
             {...register("valid", { required: true })}
@@ -68,6 +92,7 @@ const ContactForm = ({ city = "" }) => {
           />
           <label htmlFor="valid">{CHECKBOX_LABEL}</label>
         </div>
+        {errors.valid?.message && <span>{errors.valid?.message}</span>}
         {message && (
           <p style={{ color: "green", textAlign: "center" }}>{message}</p>
         )}
