@@ -6,12 +6,12 @@ import {
 } from "./strings";
 import "./style.css";
 
-const ThirdPage = () => {
+const ThirdPage = ({ city = "" }) => {
   return (
     <section className="third-page">
       <div className="first-block">
         <div className="title-container">
-          <h2 className="title-first-block">{TITLE}</h2>
+          <h2 className="title-first-block">{TITLE.replace("VILLE", city)}</h2>
         </div>
         <div className="paragraph-container">
           <p>{PARAGRAPH}</p>
