@@ -25,10 +25,21 @@
   height: 50px;
   border: 0;
   border-radius: 12px;
-
   font-weight: 700;
   font-size: 1.2em;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
 }
 
 .textarea {
@@ -38,11 +49,6 @@
 
 span {
   color: red;
-}
-
-.submit-button:hover {
-  cursor: pointer;
-  opacity: 0.8;
 }
 
 .first-page {

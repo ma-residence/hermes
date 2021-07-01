@@ -8,6 +8,9 @@ import { useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import * as yup from "yup";
+import Spinner from "../../Spinner";
+import { useAlert } from "react-alert";
+import { useToasts } from "react-toast-notifications";
 
 const REQUIRED = "CHAMP OBLIGATOIRE";
 
@@ -20,27 +23,38 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = ({ city = "" }) => {
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
-
-  const [message, setMessage] = useState("");
+  const { addToast } = useToasts();
 
   const onSubmit = (data) => {
+    setLoading(true);
     db.collection("demands")
       .add({
         ...omit(data, "valid"),
         city,
       })
-      .then(function () {
-        setMessage("Votre besoin a été remonté avec succes.");
+      .then(() => {
+        addToast("Votre besoin a bien été enregistré", {
+          appearance: "success",
+          autoDismiss: true,
+        });
+        setLoading(false);
+        reset();
       })
-      .catch(function () {
-        setMessage("Erreur lors de l'envoi du formulaire");
+      .catch(() => {
+        addToast("Erreur lors de l'envoi du formulaire", {
+          appearance: "error",
+          autoDismiss: true,
+        });
+        setLoading(false);
       });
   };
 
@@ -83,7 +97,9 @@ const ContactForm = ({ city = "" }) => {
           {...register("description", { required: true })}
           placeholder="Votre besoin"
         />
-        {errors.description?.message && <span>{errors.description?.message}</span>}
+        {errors.description?.message && (
+          <span>{errors.description?.message}</span>
+        )}
         <div className="inline">
           <input
             {...register("valid", { required: true })}
@@ -93,11 +109,12 @@ const ContactForm = ({ city = "" }) => {
           <label htmlFor="valid">{CHECKBOX_LABEL}</label>
         </div>
         {errors.valid?.message && <span>{errors.valid?.message}</span>}
-        {message && (
-          <p style={{ color: "green", textAlign: "center" }}>{message}</p>
-        )}
-        <button className="submit-button gradient" type="submit">
-          {BUTTON_TEXT}
+        <button
+          className="submit-button gradient"
+          type="submit"
+          disabled={loading}
+        >
+          {loading ? <Spinner /> : BUTTON_TEXT}
         </button>
       </form>
     </div>
