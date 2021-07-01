@@ -9,7 +9,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import * as yup from "yup";
 import Spinner from "../../Spinner";
-import { useAlert } from "react-alert";
 import { useToasts } from "react-toast-notifications";
 
 const REQUIRED = "CHAMP OBLIGATOIRE";
