@@ -14,7 +14,7 @@ const ThirdPage = ({ city = "" }) => {
           <h2 className="title-first-block">{TITLE.replace("VILLE", city)}</h2>
         </div>
         <div className="paragraph-container">
-          <p>{PARAGRAPH}</p>
+          <p>{PARAGRAPH.replace("VILLE", city)}</p>
         </div>
         <div className="stats-container">
           <div>

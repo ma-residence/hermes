@@ -1,7 +1,7 @@
 export const TITLE = "Le CCAS de VILLE";
 
 export const PARAGRAPH =
-  "Le CCAS, ou Centre Communal d’Action Sociale de la ville de Vierzon est un organisme officiel dédié à remédier aux situations de précarité ou de grande difficulté sociale. Tous les habitants de la ville sont concernés, et peuvent être écoutés et pris en charge par  ce service mis en place par la mairie.";
+  "Le CCAS, ou Centre Communal d’Action Sociale de la ville de VILLE est un organisme officiel dédié à remédier aux situations de précarité ou de grande difficulté sociale. Tous les habitants de la ville sont concernés, et peuvent être écoutés et pris en charge par  ce service mis en place par la mairie.";
 
 export const SECOND_PARAGRAPH_TITLE = (
   <>Ensembl :<br /> le réseau social de votre collectivité</>
