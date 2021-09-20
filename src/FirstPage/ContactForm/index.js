@@ -39,6 +39,7 @@ const ContactForm = ({ city = "" }) => {
       .add({
         ...omit(data, "valid"),
         city,
+        timestamp: Date.now(),
       })
       .then(() => {
         addToast("Votre besoin a bien été enregistré", {
