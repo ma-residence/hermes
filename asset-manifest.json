@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "https://besoin.ensembl.fr/static/css/main.e2aff1e0.chunk.css",
-    "main.js": "https://besoin.ensembl.fr/static/js/main.d56e90dc.chunk.js",
-    "main.js.map": "https://besoin.ensembl.fr/static/js/main.d56e90dc.chunk.js.map",
+    "main.css": "https://besoin.ensembl.fr/static/css/main.aecf1295.chunk.css",
+    "main.js": "https://besoin.ensembl.fr/static/js/main.65eb427a.chunk.js",
+    "main.js.map": "https://besoin.ensembl.fr/static/js/main.65eb427a.chunk.js.map",
     "runtime-main.js": "https://besoin.ensembl.fr/static/js/runtime-main.b8414d63.js",
     "runtime-main.js.map": "https://besoin.ensembl.fr/static/js/runtime-main.b8414d63.js.map",
-    "static/js/2.7de1bd01.chunk.js": "https://besoin.ensembl.fr/static/js/2.7de1bd01.chunk.js",
-    "static/js/2.7de1bd01.chunk.js.map": "https://besoin.ensembl.fr/static/js/2.7de1bd01.chunk.js.map",
+    "static/js/2.8886635b.chunk.js": "https://besoin.ensembl.fr/static/js/2.8886635b.chunk.js",
+    "static/js/2.8886635b.chunk.js.map": "https://besoin.ensembl.fr/static/js/2.8886635b.chunk.js.map",
     "index.html": "https://besoin.ensembl.fr/index.html",
-    "static/css/main.e2aff1e0.chunk.css.map": "https://besoin.ensembl.fr/static/css/main.e2aff1e0.chunk.css.map",
-    "static/js/2.7de1bd01.chunk.js.LICENSE.txt": "https://besoin.ensembl.fr/static/js/2.7de1bd01.chunk.js.LICENSE.txt",
+    "static/css/main.aecf1295.chunk.css.map": "https://besoin.ensembl.fr/static/css/main.aecf1295.chunk.css.map",
+    "static/js/2.8886635b.chunk.js.LICENSE.txt": "https://besoin.ensembl.fr/static/js/2.8886635b.chunk.js.LICENSE.txt",
     "static/media/index.css": "https://besoin.ensembl.fr/static/media/ITCAvantGardeStdBold.f501defc.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.b8414d63.js",
-    "static/js/2.7de1bd01.chunk.js",
-    "static/css/main.e2aff1e0.chunk.css",
-    "static/js/main.d56e90dc.chunk.js"
+    "static/js/2.8886635b.chunk.js",
+    "static/css/main.aecf1295.chunk.css",
+    "static/js/main.65eb427a.chunk.js"
   ]
 }
